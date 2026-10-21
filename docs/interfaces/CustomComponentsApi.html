@@ -1,0 +1,165 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>CustomComponentsApi | @element-hq/element-web-module-api - v2.3.0</title><meta name="description" content="Documentation for @element-hq/element-web-module-api"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><script async src="../assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container"><a href="../index.html" class="title">@element-hq/element-web-module-api - v2.3.0</a>
+<div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/>
+<ul role="listbox" id="tsd-search-results"></ul>
+<div id="tsd-search-status" aria-live="polite" aria-atomic="true">
+<div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<ul class="tsd-breadcrumb" aria-label="Breadcrumb">
+<li><a href="" aria-current="page">CustomComponentsApi</a></li></ul>
+<h1>Interface CustomComponentsApi<code class="tsd-tag">Alpha</code></h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>API for inserting custom components into Element.
+Subject to change.</p>
+</div></section>
+<div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">CustomComponentsApi</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-call-signature" href="#registercomposerpreview-1">registerComposerPreview</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">filterFn</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">composerText</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">roomId</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">renderer</span><span class="tsd-signature-symbol">:</span> <a href="../types/CustomComposerPreviewRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomComposerPreviewRenderFunction</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#registerlogincomponent-1">registerLoginComponent</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">renderer</span><span class="tsd-signature-symbol">:</span> <a href="../types/CustomLoginRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomLoginRenderFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#registermessagerenderer-1">registerMessageRenderer</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">eventTypeOrFilter</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span> <span class="tsd-signature-symbol">|</span> (<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">mxEvent</span><span class="tsd-signature-symbol">:</span> <a href="MatrixEvent.html" class="tsd-signature-type tsd-kind-interface">MatrixEvent</a><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">boolean</span>)<span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">renderer</span><span class="tsd-signature-symbol">:</span> <a href="../types/CustomMessageRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomMessageRenderFunction</a><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">hints</span><span class="tsd-signature-symbol">?:</span> <a href="../types/CustomMessageRenderHints.html" class="tsd-signature-type tsd-kind-type-alias">CustomMessageRenderHints</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#registerroompreviewbar-1">registerRoomPreviewBar</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">renderer</span><span class="tsd-signature-symbol">:</span> <a href="../types/CustomRoomPreviewBarRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomRoomPreviewBarRenderFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/element-hq/element-web/blob/develop/packages/module-api/src/api/custom-components.ts#L229">module-api/src/api/custom-components.ts:229</a></li></ul></aside>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h5 class="tsd-index-heading uppercase">Index</h5></summary>
+<div class="tsd-accordion-details">
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading tsd-anchor-link" id="methods">Methods<a href="#methods" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-index-list"><a href="#registercomposerpreview" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>register<wbr/>Composer<wbr/>Preview</span></a>
+<a href="#registerlogincomponent" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>register<wbr/>Login<wbr/>Component</span></a>
+<a href="#registermessagerenderer" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>register<wbr/>Message<wbr/>Renderer</span></a>
+<a href="#registerroompreviewbar" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>register<wbr/>Room<wbr/>Preview<wbr/>Bar</span></a>
+</div></section></div></details></section></section>
+<details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
+<section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="registercomposerpreview"><span>register<wbr/>Composer<wbr/>Preview</span><a href="#registercomposerpreview" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="registercomposerpreview-1"><span class="tsd-kind-call-signature">registerComposerPreview</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">filterFn</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">composerText</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">roomId</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">renderer</span><span class="tsd-signature-symbol">:</span> <a href="../types/CustomComposerPreviewRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomComposerPreviewRenderFunction</a><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><a href="#registercomposerpreview-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description"><code class="tsd-tag">Alpha</code>
+<div class="tsd-comment tsd-typography"><p>Register a renderer for replacing the preview above the message composer.</p>
+<p>The render function should return a rendered component.</p>
+<p>Multiple render function may be registered, however the first matching result will be used.
+If no events match or are registered then the originalComponent is rendered.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">filterFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">composerText</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">roomId</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">boolean</span></span>
+<div class="tsd-comment tsd-typography"><p>A filter function to determine if this renderer should be used.</p>
+</div></li>
+<li><span><span class="tsd-kind-parameter">renderer</span>: <a href="../types/CustomComposerPreviewRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomComposerPreviewRenderFunction</a></span>
+<div class="tsd-comment tsd-typography"><p>The render function.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-example">
+<h4 class="tsd-anchor-link" id="example">Example<a href="#example" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code><span class="hl-1"> </span><span class="hl-2">customComponents</span><span class="hl-1">.</span><span class="hl-6">registerComposerPreview</span><span class="hl-1">(</span><br/><span class="hl-1">     (</span><span class="hl-2">composerText</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> </span><span class="hl-2">composerText</span><span class="hl-1"> === </span><span class="hl-3">&quot;hello!&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">     (</span><span class="hl-2">props</span><span class="hl-1">, </span><span class="hl-2">originalComponent</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">         </span><span class="hl-0">return</span><span class="hl-1"> &lt;</span><span class="hl-5">b</span><span class="hl-1">&gt;</span><span class="hl-2">You</span><span class="hl-3">&#39;ve said hello!&lt;/b&gt;</span><span class="hl-9">;</span><br/><span class="hl-1">     }</span><br/><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+
+</div></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/element-hq/element-web/blob/develop/packages/module-api/src/api/custom-components.ts#L313">module-api/src/api/custom-components.ts:313</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="registerlogincomponent"><span>register<wbr/>Login<wbr/>Component</span><a href="#registerlogincomponent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="registerlogincomponent-1"><span class="tsd-kind-call-signature">registerLoginComponent</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">renderer</span><span class="tsd-signature-symbol">:</span> <a href="../types/CustomLoginRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomLoginRenderFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><a href="#registerlogincomponent-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description"><code class="tsd-tag">Alpha</code>
+<div class="tsd-comment tsd-typography"><p>Register a renderer for the login component.</p>
+<p>The render function should return a rendered component.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">renderer</span>: <a href="../types/CustomLoginRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomLoginRenderFunction</a></span>
+<div class="tsd-comment tsd-typography"><p>The render function for the login component.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-example">
+<h4 class="tsd-anchor-link" id="example-1">Example<a href="#example-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code><span class="hl-1"> </span><span class="hl-2">customComponents</span><span class="hl-1">.</span><span class="hl-6">registerLoginComponent</span><span class="hl-1">((</span><span class="hl-2">props</span><span class="hl-1">, </span><span class="hl-2">OriginalComponent</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">     </span><span class="hl-0">return</span><span class="hl-1"> &lt;</span><span class="hl-5">YourCustomComponent</span><span class="hl-1"> </span><span class="hl-5">onLoggedIn</span><span class="hl-1">={</span><span class="hl-5">props</span><span class="hl-1">.</span><span class="hl-2">onLoggedIn</span><span class="hl-1">} /&gt;;</span><br/><span class="hl-1"> });</span>
+</code><button>Copy</button></pre>
+
+</div></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/element-hq/element-web/blob/develop/packages/module-api/src/api/custom-components.ts#L291">module-api/src/api/custom-components.ts:291</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="registermessagerenderer"><span>register<wbr/>Message<wbr/>Renderer</span><a href="#registermessagerenderer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="registermessagerenderer-1"><span class="tsd-kind-call-signature">registerMessageRenderer</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">eventTypeOrFilter</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span> <span class="tsd-signature-symbol">|</span> (<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">mxEvent</span><span class="tsd-signature-symbol">:</span> <a href="MatrixEvent.html" class="tsd-signature-type tsd-kind-interface">MatrixEvent</a><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">boolean</span>)<span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">renderer</span><span class="tsd-signature-symbol">:</span> <a href="../types/CustomMessageRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomMessageRenderFunction</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">hints</span><span class="tsd-signature-symbol">?:</span> <a href="../types/CustomMessageRenderHints.html" class="tsd-signature-type tsd-kind-type-alias">CustomMessageRenderHints</a><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><a href="#registermessagerenderer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description"><code class="tsd-tag">Alpha</code>
+<div class="tsd-comment tsd-typography"><p>Register a renderer for a message type in the timeline.</p>
+<p>The render function should return a rendered component.</p>
+<p>Multiple render function may be registered for a single event type, however the first matching
+result will be used. If no events match or are registered then the originalComponent is rendered.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">eventTypeOrFilter</span>: <span class="tsd-signature-type">string</span> <span class="tsd-signature-symbol">|</span> (<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">mxEvent</span><span class="tsd-signature-symbol">:</span> <a href="MatrixEvent.html" class="tsd-signature-type tsd-kind-interface">MatrixEvent</a><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">boolean</span>)</span>
+<div class="tsd-comment tsd-typography"><p>The event type this renderer is for. Use a function for more complex filtering.</p>
+</div></li>
+<li><span><span class="tsd-kind-parameter">renderer</span>: <a href="../types/CustomMessageRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomMessageRenderFunction</a></span>
+<div class="tsd-comment tsd-typography"><p>The render function.</p>
+</div></li>
+<li><span><code class="tsd-tag">Optional</code><span class="tsd-kind-parameter">hints</span>: <a href="../types/CustomMessageRenderHints.html" class="tsd-signature-type tsd-kind-type-alias">CustomMessageRenderHints</a></span>
+<div class="tsd-comment tsd-typography"><p>Hints that alter the way the tile is handled.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-example">
+<h4 class="tsd-anchor-link" id="example-2">Example<a href="#example-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code><span class="hl-1"> </span><span class="hl-2">customComponents</span><span class="hl-1">.</span><span class="hl-6">registerMessageRenderer</span><span class="hl-1">(</span><span class="hl-3">&quot;m.room.message&quot;</span><span class="hl-1">, (</span><span class="hl-2">props</span><span class="hl-1">, </span><span class="hl-2">originalComponent</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-0">return</span><span class="hl-1"> &lt;</span><span class="hl-5">YourCustomComponent</span><span class="hl-1"> </span><span class="hl-5">mxEvent</span><span class="hl-1">={</span><span class="hl-5">props</span><span class="hl-1">.</span><span class="hl-2">mxEvent</span><span class="hl-1">} /&gt;;</span><br/><span class="hl-1"> });</span><br/><span class="hl-1"> </span><span class="hl-2">customComponents</span><span class="hl-1">.</span><span class="hl-6">registerMessageRenderer</span><span class="hl-1">(</span><br/><span class="hl-1">     (</span><span class="hl-2">mxEvent</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> </span><span class="hl-2">mxEvent</span><span class="hl-1">.</span><span class="hl-6">getType</span><span class="hl-1">().</span><span class="hl-6">matches</span><span class="hl-1">(</span><span class="hl-10">/m</span><span class="hl-11">\.</span><span class="hl-10">room</span><span class="hl-11">\.</span><span class="hl-12">(</span><span class="hl-10">topic</span><span class="hl-13">|</span><span class="hl-10">name</span><span class="hl-12">)</span><span class="hl-10">/</span><span class="hl-1">) &amp;&amp; </span><span class="hl-2">mxEvent</span><span class="hl-1">.</span><span class="hl-6">isState</span><span class="hl-1">(),</span><br/><span class="hl-1">     (</span><span class="hl-2">props</span><span class="hl-1">, </span><span class="hl-2">originalComponent</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">         </span><span class="hl-0">return</span><span class="hl-1"> &lt;</span><span class="hl-5">YourCustomStateRenderer</span><span class="hl-1"> </span><span class="hl-5">mxEvent</span><span class="hl-1">={</span><span class="hl-5">props</span><span class="hl-1">.</span><span class="hl-2">mxEvent</span><span class="hl-1">} /&gt;;</span><br/><span class="hl-1">     }</span><br/><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+
+</div></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/element-hq/element-web/blob/develop/packages/module-api/src/api/custom-components.ts#L254">module-api/src/api/custom-components.ts:254</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="registerroompreviewbar"><span>register<wbr/>Room<wbr/>Preview<wbr/>Bar</span><a href="#registerroompreviewbar" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="registerroompreviewbar-1"><span class="tsd-kind-call-signature">registerRoomPreviewBar</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">renderer</span><span class="tsd-signature-symbol">:</span> <a href="../types/CustomRoomPreviewBarRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomRoomPreviewBarRenderFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><a href="#registerroompreviewbar-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description"><code class="tsd-tag">Alpha</code>
+<div class="tsd-comment tsd-typography"><p>Register a renderer for the room preview bar.</p>
+<p>The render function should return a rendered component.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">renderer</span>: <a href="../types/CustomRoomPreviewBarRenderFunction.html" class="tsd-signature-type tsd-kind-type-alias">CustomRoomPreviewBarRenderFunction</a></span>
+<div class="tsd-comment tsd-typography"><p>The render function for the room preview bar.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-example">
+<h4 class="tsd-anchor-link" id="example-3">Example<a href="#example-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code><span class="hl-1"> </span><span class="hl-2">customComponents</span><span class="hl-1">.</span><span class="hl-6">registerRoomPreviewBar</span><span class="hl-1">((</span><span class="hl-2">props</span><span class="hl-1">, </span><span class="hl-2">OriginalComponent</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">     </span><span class="hl-0">if</span><span class="hl-1"> (</span><span class="hl-2">props</span><span class="hl-1">.</span><span class="hl-2">roomId</span><span class="hl-1"> === </span><span class="hl-3">&quot;!some_special_room_id:server&quot;</span><span class="hl-1">) {</span><br/><span class="hl-1">         </span><span class="hl-0">return</span><span class="hl-1"> &lt;</span><span class="hl-5">YourCustomRoomPreviewBarComponent</span><span class="hl-1"> {...</span><span class="hl-5">props</span><span class="hl-1">} /&gt;;</span><br/><span class="hl-1">     }</span><br/><span class="hl-1">     </span><span class="hl-0">return</span><span class="hl-1"> &lt;</span><span class="hl-5">YourCustomComponent</span><span class="hl-1"> </span><span class="hl-5">mxEvent</span><span class="hl-1">={</span><span class="hl-5">props</span><span class="hl-1">.</span><span class="hl-2">mxEvent</span><span class="hl-1">} /&gt;;</span><br/><span class="hl-1"> });</span>
+</code><button>Copy</button></pre>
+
+</div></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/element-hq/element-web/blob/develop/packages/module-api/src/api/custom-components.ts#L276">module-api/src/api/custom-components.ts:276</a></li></ul></aside></div></li></ul></section></section></details></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></div>
+<div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Methods</summary>
+<div><a href="#registercomposerpreview"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>register<wbr/>Composer<wbr/>Preview</span></a><a href="#registerlogincomponent"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>register<wbr/>Login<wbr/>Component</span></a><a href="#registermessagerenderer"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>register<wbr/>Message<wbr/>Renderer</span></a><a href="#registerroompreviewbar"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>register<wbr/>Room<wbr/>Preview<wbr/>Bar</span></a></div></details></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="../modules.html">@element-hq/element-web-module-api - v2.3.0</a>
+<ul class="tsd-small-nested-navigation" id="tsd-nav-container">
+<li>Loading...</li></ul></nav></div></div></div><footer>
+<p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer>
+<div class="overlay"></div></body></html>
