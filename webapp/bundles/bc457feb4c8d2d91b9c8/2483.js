@@ -1,0 +1,277 @@
+"use strict";
+(self["webpackChunkelement_web"] = self["webpackChunkelement_web"] || []).push([[2483],{
+
+/***/ "../../node_modules/.pnpm/@element-hq+element-call-component@https+++codeload.github.com+element-hq+element-call+_1332b967a6678d1d4d7ea56611e7f85c/node_modules/@element-hq/element-call-component/dist/app-BmEEYWU0.js"
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   a11y: () => (/* binding */ e),
+/* harmony export */   action: () => (/* binding */ t),
+/* harmony export */   analytics_notice: () => (/* binding */ n),
+/* harmony export */   call_ended_view: () => (/* binding */ r),
+/* harmony export */   call_name: () => (/* binding */ i),
+/* harmony export */   common: () => (/* binding */ a),
+/* harmony export */   "default": () => (/* binding */ ae),
+/* harmony export */   developer_mode: () => (/* binding */ o),
+/* harmony export */   disconnected_banner: () => (/* binding */ s),
+/* harmony export */   error: () => (/* binding */ c),
+/* harmony export */   group_call_loader: () => (/* binding */ l),
+/* harmony export */   hangup_button_label: () => (/* binding */ u),
+/* harmony export */   header_label: () => (/* binding */ d),
+/* harmony export */   header_participants_label: () => (/* binding */ f),
+/* harmony export */   invite_modal: () => (/* binding */ p),
+/* harmony export */   join_existing_call_modal: () => (/* binding */ m),
+/* harmony export */   layout_grid_label: () => (/* binding */ h),
+/* harmony export */   layout_spotlight_label: () => (/* binding */ g),
+/* harmony export */   lobby: () => (/* binding */ _),
+/* harmony export */   log_in: () => (/* binding */ v),
+/* harmony export */   logging_in: () => (/* binding */ y),
+/* harmony export */   login_auth_links: () => (/* binding */ b),
+/* harmony export */   login_auth_links_prompt: () => (/* binding */ x),
+/* harmony export */   login_subheading: () => (/* binding */ S),
+/* harmony export */   login_title: () => (/* binding */ ee),
+/* harmony export */   microphone_off: () => (/* binding */ C),
+/* harmony export */   microphone_on: () => (/* binding */ w),
+/* harmony export */   mute_microphone_button_label: () => (/* binding */ T),
+/* harmony export */   participant_count_one: () => (/* binding */ E),
+/* harmony export */   participant_count_other: () => (/* binding */ D),
+/* harmony export */   qr_code: () => (/* binding */ te),
+/* harmony export */   rageshake_button_error_caption: () => (/* binding */ O),
+/* harmony export */   rageshake_request_modal: () => (/* binding */ k),
+/* harmony export */   rageshake_send_logs: () => (/* binding */ A),
+/* harmony export */   rageshake_sending: () => (/* binding */ j),
+/* harmony export */   rageshake_sending_logs: () => (/* binding */ M),
+/* harmony export */   rageshake_sent: () => (/* binding */ N),
+/* harmony export */   recaptcha_dismissed: () => (/* binding */ P),
+/* harmony export */   recaptcha_not_loaded: () => (/* binding */ F),
+/* harmony export */   register: () => (/* binding */ I),
+/* harmony export */   register_auth_links: () => (/* binding */ L),
+/* harmony export */   register_confirm_password_label: () => (/* binding */ R),
+/* harmony export */   register_heading: () => (/* binding */ z),
+/* harmony export */   return_home_button: () => (/* binding */ B),
+/* harmony export */   room_auth_view_continue_button: () => (/* binding */ V),
+/* harmony export */   screenshare_button_label: () => (/* binding */ H),
+/* harmony export */   settings: () => (/* binding */ U),
+/* harmony export */   star_rating_input_label_one: () => (/* binding */ W),
+/* harmony export */   star_rating_input_label_other: () => (/* binding */ G),
+/* harmony export */   start_new_call: () => (/* binding */ K),
+/* harmony export */   start_video_button_label: () => (/* binding */ q),
+/* harmony export */   stop_screenshare_button_label: () => (/* binding */ J),
+/* harmony export */   stop_video_button_label: () => (/* binding */ Y),
+/* harmony export */   submitting: () => (/* binding */ X),
+/* harmony export */   switch_camera: () => (/* binding */ Z),
+/* harmony export */   unauthenticated_view_body: () => (/* binding */ Q),
+/* harmony export */   unauthenticated_view_login_button: () => (/* binding */ $),
+/* harmony export */   unmute_microphone_button_label: () => (/* binding */ ne),
+/* harmony export */   version: () => (/* binding */ re),
+/* harmony export */   video_tile: () => (/* binding */ ie)
+/* harmony export */ });
+//#region locales/tr/app.json
+var e = { user_menu: "Kullanıcı menüsü" }, t = {
+	close: "Kapat",
+	copy_link: "Bağlantıyı kopyala",
+	edit: "Düzenle",
+	go: "Git",
+	invite: "Davet et",
+	lower_hand: "Elini indir",
+	no: "Hayır",
+	pick_reaction: "Tepki seç",
+	raise_hand: "Elini kaldır",
+	register: "Kaydol",
+	remove: "Çıkar",
+	show_less: "Daha az göster",
+	show_more: "Daha fazla göster",
+	sign_in: "Gir",
+	sign_out: "Çık",
+	submit: "Gönder",
+	upload_file: "Dosya Yükle"
+}, n = "Bu beta sürümüne katılarak, ürünü geliştirmek için kullandığımız anonim verilerin toplanmasına izin vermiş olursunuz. Hangi verileri izlediğimiz hakkında daha fazla bilgiyi <2>Gizlilik Politikamızda</2> ve <6>Çerez Politikamızda bulabilirsiniz</6>..", r = {
+	create_account_button: "Hesap aç",
+	create_account_prompt: "<0>Hesabınızı tutmak için niye bir parola açmıyorsunuz?</0><1>Böylece ileriki aramalarda adınızı ve avatarınızı kullanabileceksiniz</1>",
+	feedback_done: "<0>Geri bildiriminiz için teşekkürler!</0>",
+	feedback_prompt: "<0>Deneyiminizi geliştirebilmemiz için geri bildirimlerinizi duymak isteriz.</0>",
+	headline: "{{displayName}}, çağrınız sona erdi.",
+	not_now_button: "Şimdi değil, ev ekranına dön",
+	reconnect_button: "Yeniden bağlan",
+	survey_prompt: "Nasıl geçti?"
+}, i = "Aramanın adı", a = {
+	analytics: "Analiz",
+	audio: "Ses",
+	avatar: "Avatar",
+	back: "Geri",
+	display_name: "Ekran adı",
+	encrypted: "Şifrelenmiş",
+	home: "Ev",
+	loading: "Yükleniyor…",
+	next: "İleri",
+	options: "Seçenekler",
+	password: "Parola",
+	preferences: "Tercihler",
+	profile: "Profil",
+	reaction: "Tepki",
+	reactions: "Tepkiler",
+	settings: "Ayarlar",
+	unencrypted: "Şifrelenmemiş",
+	username: "Kullanıcı adı",
+	video: "Video"
+}, o = {
+	crypto_version: "Şifreleme sürümü: {{version}}",
+	debug_tile_layout_label: "Hata ayıklama döşeme düzeni",
+	device_id: "Cihaz Kimliği: {{id}}",
+	duplicate_tiles_label: "Katılımcı başına ek döşeme sayısı",
+	hostname: "Sunucu adı: {{hostname}}",
+	livekit_server_info: "LiveKit Sunucu Bilgisi",
+	livekit_sfu: "LiveKit SFU: {{url}}",
+	matrix_id: "Matrix Kimliği: {{id}}",
+	show_connection_stats: "Bağlantı istatistiklerini göster"
+}, s = "Sunucuyla bağlantı kesildi.", c = {
+	call_not_found: "Çağrı bulunamadı",
+	call_not_found_description: "<0>Bu bağlantı mevcut herhangi bir çağrıya ait görünmüyor. Doğru bağlantıya sahip olduğunuzu kontrol edin veya <1> yeni bir bağlantı oluşturun</1>. </0>",
+	connection_lost: "Bağlantı kesildi",
+	connection_lost_description: "Çağrıdan bağlantınız kesildi.",
+	e2ee_unsupported: "Uyumsuz Tarayıcı",
+	e2ee_unsupported_description: "İnternet tarayıcınız şifreli aramaları desteklemiyor. Desteklenen tarayıcılar arasında Chrome, Safari ve Firefox 117+ bulunur.",
+	generic: "Bir şeyler ters gitti",
+	generic_description: "Hata ayıklama günlüklerini göndermeniz sorunu tespit etmemizde yardımcı olacaktır.",
+	open_elsewhere: "Başka bir sekmede açıldı",
+	open_elsewhere_description: "{{brand}} başka bir sekmede açıldı. Bu doğru değilse, sayfayı yeniden yüklemeyi deneyin."
+}, l = {
+	banned_body: "Odaya girmeniz yasaklandı.",
+	banned_heading: "Yasaklandı",
+	call_ended_body: "Aramadan çıkarıldınız.",
+	call_ended_heading: "Arama sonlandırıldı",
+	knock_reject_body: "Katılma isteğiniz reddedildi.",
+	knock_reject_heading: "Erişim reddedildi",
+	reason: "Neden: {{reason}}"
+}, u = "Aramayı sonlandır", d = "Element Call Ana Sayfa", f = "Katılımcılar", p = {
+	link_copied_toast: "Bağlantı panoya kopyalandı",
+	title: "Bu görüşmeye davet edin"
+}, m = {
+	join_button: "Evet, aramaya katıl",
+	text: "Bu arama zaten var, katılmak ister misiniz?",
+	title: "Mevcut aramaya katıl?"
+}, h = "Izgara", g = "İlgi Odağı", _ = {
+	ask_to_join: "Aramaya katılma isteği gönder",
+	join_as_guest: "Misafir olarak katıl",
+	join_button: "Aramaya katıl",
+	leave_button: "Son aramalara dön",
+	waiting_for_invite: "İstek gönderildi! Katılmak için izin verilmesi bekleniyor…"
+}, v = "Giriş yap", y = "Giriliyor…", b = "<0>Hesap oluştur</0> yahut <2>Konuk olarak gir</2>", x = "Henüz kaydolmadınız mı?", S = "Element'e devam etmek için", ee = "Gir", C = "Mikrofon kapalı", w = "Mikrofon açık", T = "Mikrofonu sessize al", E = "{{count, number}}", D = "{{count, number}}", te = "QR Kodu", O = "Günlükleri göndermeyi yeniden dene", k = {
+	body: "Bu aramadaki başka bir kullanıcı sorun yaşıyor. Sorunu daha iyi çözebilmemiz için hata ayıklama kütüğünü almak isteriz.",
+	title: "Hata ayıklama kütük istemi"
+}, A = "Hata ayıklama kütüğünü gönder", j = "Gönderiliyor…", M = "Hata ayıklama günlükleri gönderiliyor...", N = "Teşekkürler!", P = "reCAPTCHA atlandı", F = "reCAPTCHA yüklenmedi", I = {
+	passwords_must_match: "Parolalar aynı olmalı",
+	registering: "Kaydediyor…"
+}, L = "<0>Mevcut hesabınız mı var?</0><1><0>Gir</0> yahut <2>Konuk girişi</2></1>", R = "Parolayı tekrar edin", z = "Hesabınızı Oluşturun", B = "Ev ekranına geri dön", V = "Devam et", H = "Ekran paylaş", U = {
+	audio_tab: {
+		effect_volume_description: "Tepkilerin ve el kaldırmaların çaldığı ses düzeyini ayarlayın.",
+		effect_volume_label: "Ses efekti sesi"
+	},
+	developer_tab_title: "Geliştirici",
+	devices: {
+		camera: "Kamera",
+		camera_numbered: "Kamera {{n}}",
+		default: "Varsayılan",
+		default_named: "Varsayılan <2>({{name}})</2>",
+		microphone: "Mikrofon",
+		microphone_numbered: "Mikrofon {{n}}",
+		speaker: "Hoparlör",
+		speaker_numbered: "Hoparlör {{n}}"
+	},
+	feedback_tab_body: "Sorun yaşıyorsanız veya yalnızca geri bildirimde bulunmak istiyorsanız, lütfen bize aşağıdan kısa bir açıklama gönderin.",
+	feedback_tab_description_label: "Görüşleriniz",
+	feedback_tab_h4: "Geri bildirim ver",
+	feedback_tab_send_logs_label: "Hata ayıklama kütüğünü dahil et",
+	feedback_tab_thank_you: "Teşekkürler, geri bildiriminizi aldık!",
+	feedback_tab_title: "Geri Bildirim",
+	opt_in_description: "<0></0><1></1>Bu kutunun işaretini kaldırarak onayınızı geri çekebilirsiniz. Şu anda bir aramadaysanız, bu ayar aramanın sonunda geçerli olacaktır.",
+	preferences_tab: {
+		developer_mode_label: "Geliştirici modu",
+		developer_mode_label_description: "Geliştirici modunu etkinleştir ve geliştirici ayarları sekmesini göster.",
+		introduction: "Burada daha iyi bir deneyim için ek seçenekleri yapılandırabilirsiniz.",
+		reactions_play_sound_description: "Birisi aramada tepki gönderdiğinde ses efekti çal.",
+		reactions_play_sound_label: "Tepki seslerini çal",
+		reactions_show_description: "Biri tepki gönderdiğinde animasyon göster.",
+		reactions_show_label: "Tepkileri göster",
+		show_hand_raised_timer_description: "Bir katılımcı elini kaldırdığında bir zamanlayıcı göster",
+		show_hand_raised_timer_label: "El kaldırma süresini göster"
+	}
+}, W = "{{count}} yıldız", G = "{{count}} yıldız", K = "Yeni arama başlat", q = "Videoy paylaşımı Başlat", J = "Ekran paylaşılıyor", Y = "Video paylaşımını durdur", X = "Gönderiliyor...", Z = "Kamerayı değiştir", Q = "Kaydolmadınız mı? <2>Hesap açın</2>", $ = "Hesabınıza girin", ne = "Mikrofonun sesini aç", re = "{{productName}} sürüm: {{version}}", ie = {
+	always_show: "Her zaman göster",
+	camera_starting: "Video paylaşımı başlatılıyor...",
+	collapse: "Daralt",
+	expand: "Genişlet",
+	mute_for_me: "Benim için sessize al",
+	muted_for_me: "Benim için susturulanlar",
+	volume: "Ses",
+	waiting_for_media: "Ortam bekleniyor..."
+}, ae = {
+	a11y: e,
+	action: t,
+	analytics_notice: n,
+	call_ended_view: r,
+	call_name: i,
+	common: a,
+	developer_mode: o,
+	disconnected_banner: s,
+	error: c,
+	group_call_loader: l,
+	hangup_button_label: u,
+	header_label: d,
+	header_participants_label: f,
+	invite_modal: p,
+	join_existing_call_modal: m,
+	layout_grid_label: h,
+	layout_spotlight_label: g,
+	lobby: _,
+	log_in: v,
+	logging_in: y,
+	login_auth_links: b,
+	login_auth_links_prompt: x,
+	login_subheading: S,
+	login_title: "Gir",
+	microphone_off: C,
+	microphone_on: w,
+	mute_microphone_button_label: T,
+	participant_count_one: E,
+	participant_count_other: D,
+	qr_code: te,
+	rageshake_button_error_caption: O,
+	rageshake_request_modal: k,
+	rageshake_send_logs: A,
+	rageshake_sending: j,
+	rageshake_sending_logs: M,
+	rageshake_sent: N,
+	recaptcha_dismissed: P,
+	recaptcha_not_loaded: F,
+	register: I,
+	register_auth_links: L,
+	register_confirm_password_label: R,
+	register_heading: z,
+	return_home_button: B,
+	room_auth_view_continue_button: V,
+	screenshare_button_label: H,
+	settings: U,
+	star_rating_input_label_one: W,
+	star_rating_input_label_other: G,
+	start_new_call: K,
+	start_video_button_label: q,
+	stop_screenshare_button_label: J,
+	stop_video_button_label: Y,
+	submitting: X,
+	switch_camera: Z,
+	unauthenticated_view_body: Q,
+	unauthenticated_view_login_button: $,
+	unmute_microphone_button_label: ne,
+	version: re,
+	video_tile: ie
+};
+//#endregion
+
+
+
+
+/***/ }
+
+}]);

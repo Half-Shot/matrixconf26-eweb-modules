@@ -1,0 +1,338 @@
+"use strict";
+(self["webpackChunkelement_web"] = self["webpackChunkelement_web"] || []).push([[4767],{
+
+/***/ "../../node_modules/.pnpm/@element-hq+element-call-component@https+++codeload.github.com+element-hq+element-call+_1332b967a6678d1d4d7ea56611e7f85c/node_modules/@element-hq/element-call-component/dist/app-D72pQY6W.js"
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   a11y: () => (/* binding */ e),
+/* harmony export */   action: () => (/* binding */ t),
+/* harmony export */   analytics_notice: () => (/* binding */ n),
+/* harmony export */   call_ended_view: () => (/* binding */ r),
+/* harmony export */   call_name: () => (/* binding */ i),
+/* harmony export */   common: () => (/* binding */ a),
+/* harmony export */   "default": () => (/* binding */ de),
+/* harmony export */   developer_mode: () => (/* binding */ o),
+/* harmony export */   disconnected_banner: () => (/* binding */ s),
+/* harmony export */   error: () => (/* binding */ c),
+/* harmony export */   group_call_loader: () => (/* binding */ l),
+/* harmony export */   handset: () => (/* binding */ u),
+/* harmony export */   hangup_button_label: () => (/* binding */ d),
+/* harmony export */   header_label: () => (/* binding */ f),
+/* harmony export */   header_participants_label: () => (/* binding */ p),
+/* harmony export */   invite_modal: () => (/* binding */ m),
+/* harmony export */   join_existing_call_modal: () => (/* binding */ h),
+/* harmony export */   layout_grid_label: () => (/* binding */ g),
+/* harmony export */   layout_spotlight_label: () => (/* binding */ _),
+/* harmony export */   lobby: () => (/* binding */ v),
+/* harmony export */   log_in: () => (/* binding */ y),
+/* harmony export */   logging_in: () => (/* binding */ b),
+/* harmony export */   login_auth_links: () => (/* binding */ x),
+/* harmony export */   login_auth_links_prompt: () => (/* binding */ S),
+/* harmony export */   login_subheading: () => (/* binding */ C),
+/* harmony export */   login_title: () => (/* binding */ w),
+/* harmony export */   microphone_off: () => (/* binding */ T),
+/* harmony export */   microphone_on: () => (/* binding */ E),
+/* harmony export */   mute_microphone_button_label: () => (/* binding */ D),
+/* harmony export */   participant_count_few: () => (/* binding */ k),
+/* harmony export */   participant_count_many: () => (/* binding */ A),
+/* harmony export */   participant_count_one: () => (/* binding */ O),
+/* harmony export */   qr_code: () => (/* binding */ j),
+/* harmony export */   rageshake_button_error_caption: () => (/* binding */ M),
+/* harmony export */   rageshake_request_modal: () => (/* binding */ N),
+/* harmony export */   rageshake_send_logs: () => (/* binding */ P),
+/* harmony export */   rageshake_sending: () => (/* binding */ F),
+/* harmony export */   rageshake_sending_logs: () => (/* binding */ I),
+/* harmony export */   rageshake_sent: () => (/* binding */ L),
+/* harmony export */   recaptcha_dismissed: () => (/* binding */ R),
+/* harmony export */   recaptcha_not_loaded: () => (/* binding */ z),
+/* harmony export */   recaptcha_ssla_caption: () => (/* binding */ B),
+/* harmony export */   register: () => (/* binding */ V),
+/* harmony export */   register_auth_links: () => (/* binding */ H),
+/* harmony export */   register_confirm_password_label: () => (/* binding */ U),
+/* harmony export */   register_heading: () => (/* binding */ W),
+/* harmony export */   return_home_button: () => (/* binding */ G),
+/* harmony export */   room_auth_view_continue_button: () => (/* binding */ K),
+/* harmony export */   room_auth_view_ssla_caption: () => (/* binding */ q),
+/* harmony export */   screenshare_button_label: () => (/* binding */ J),
+/* harmony export */   settings: () => (/* binding */ Y),
+/* harmony export */   star_rating_input_label_few: () => (/* binding */ Z),
+/* harmony export */   star_rating_input_label_many: () => (/* binding */ Q),
+/* harmony export */   star_rating_input_label_one: () => (/* binding */ X),
+/* harmony export */   start_new_call: () => (/* binding */ $),
+/* harmony export */   start_video_button_label: () => (/* binding */ ee),
+/* harmony export */   stop_screenshare_button_label: () => (/* binding */ te),
+/* harmony export */   stop_video_button_label: () => (/* binding */ ne),
+/* harmony export */   submitting: () => (/* binding */ re),
+/* harmony export */   switch_camera: () => (/* binding */ ie),
+/* harmony export */   unauthenticated_view_body: () => (/* binding */ ae),
+/* harmony export */   unauthenticated_view_login_button: () => (/* binding */ oe),
+/* harmony export */   unauthenticated_view_ssla_caption: () => (/* binding */ se),
+/* harmony export */   unmute_microphone_button_label: () => (/* binding */ ce),
+/* harmony export */   version: () => (/* binding */ le),
+/* harmony export */   video_tile: () => (/* binding */ ue)
+/* harmony export */ });
+//#region locales/uk/app.json
+var e = { user_menu: "Меню користувача" }, t = {
+	close: "Закрити",
+	copy_link: "Скопіювати посилання",
+	edit: "Редагувати",
+	go: "Далі",
+	invite: "Запросити",
+	lower_hand: "Опустити руку",
+	no: "Ні",
+	pick_reaction: "Виберіть реакцію",
+	raise_hand: "Підняти руку",
+	register: "Зареєструватися",
+	remove: "Вилучити",
+	show_less: "Показувати менше",
+	show_more: "Показати більше",
+	sign_in: "Увійти",
+	sign_out: "Вийти",
+	submit: "Надіслати",
+	upload_file: "Завантажити файл"
+}, n = "Користуючись дочасним доступом, ви даєте згоду на збір анонімних даних, які ми використовуємо для вдосконалення продукту. Ви можете знайти більше інформації про те, які дані ми відстежуємо в нашій <2>Політиці Приватності</2> і нашій <6>Політиці про файли cookie</6>.", r = {
+	create_account_button: "Створити обліковий запис",
+	create_account_prompt: "<0>Чому б не завершити, налаштувавши пароль для збереження свого облікового запису?</0><1>Ви зможете зберегти своє ім'я та встановити аватарку для подальшого користування під час майбутніх викликів</1>",
+	feedback_done: "<0>Дякуємо за ваш відгук!</0>",
+	feedback_prompt: "<0>Ми будемо раді почути ваші відгуки, щоб поліпшити роботу застосунку.</0>",
+	headline: "{{displayName}}, ваш виклик завершено.",
+	not_now_button: "Не зараз, повернутися на екран домівки",
+	reconnect_button: "Під'єднати повторно",
+	survey_prompt: "Вам усе сподобалось?"
+}, i = "Назва виклику", a = {
+	analytics: "Аналітика",
+	audio: "Звук",
+	avatar: "Аватар",
+	back: "Назад",
+	display_name: "Псевдонім",
+	encrypted: "Зашифровано",
+	home: "Домівка",
+	loading: "Завантаження…",
+	next: "Далі",
+	options: "Налаштування",
+	password: "Пароль",
+	preferences: "Уподобання",
+	profile: "Профіль",
+	reaction: "Реакція",
+	reactions: "Реакції",
+	reconnecting: "Повторне з'єднання…",
+	settings: "Налаштування",
+	unencrypted: "Не зашифровано",
+	username: "Ім'я користувача",
+	video: "Відео"
+}, o = {
+	always_show_iphone_earpiece: "Показувати опцію виводу звуку в динамік iPhone на всіх платформах",
+	crypto_version: "Крипто-версія: {{version}}",
+	custom_livekit_url: {
+		current_url: "Наразі налаштовано: ",
+		from_config: "Наразі перезапис не налаштовано. Використовується URL-адреса з відомого ресурсу або конфігурації.",
+		label: "Власний Livekit-url",
+		reset: "Скинути перезапис",
+		save: "Зберегти",
+		saving: "Збереження..."
+	},
+	debug_tile_layout_label: "Налагоджування макету плиток",
+	device_id: "ID пристрою: {{id}}",
+	duplicate_tiles_label: "Кількість додаткових копій плиток на одного учасника",
+	environment_variables: "Змінні середовища",
+	hostname: "Ім'я хоста: {{hostname}}",
+	livekit_server_info: "Інформація про сервер LiveKit",
+	livekit_sfu: "LiveKit SFU: {{url}}",
+	matrixRTCMode: {
+		Comptibility: {
+			description: "Сумісно з домашніми серверами, які не підтримують закріплені події (але всі інші клієнти EC мають версію 0.17.0 або новішу)",
+			label: "Сумісність: події стану та кілька SFU"
+		},
+		Legacy: {
+			description: "Сумісно з давнішими версіями EC, які не підтримують кілька SFU",
+			label: "Застаріле: події стану та найдавніше членство SFU"
+		},
+		Matrix_2_0: {
+			description: "Сумісно лише з домашніми серверами, що підтримують закріплені події, та всіма клієнтами EC версії 0.17.0 або новіших.",
+			label: "Matrix 2.0: закріплені події та мульти-SFU"
+		},
+		title: "Режим MatrixRTC"
+	},
+	matrix_id: "Matrix ID: {{id}}",
+	mute_all_audio: "Вимкнути всі звуки (учасників, реакцій, звуків приєднання)",
+	show_connection_stats: "Показувати статистику підключення",
+	url_params: "Параметри URL"
+}, s = "Втрачено зв'язок з сервером.", c = {
+	call_is_not_supported: "Виклик не підтримується",
+	call_not_found: "Виклик не знайдено",
+	call_not_found_description: "<0>Схоже, що це посилання не належить до жодного існуючого дзвінка. Перевірте, чи посилання правильне, або <1> створіть нове</1>. </0>",
+	connection_lost: "Зв'язок втрачено",
+	connection_lost_description: "Вас було відключено від дзвінка.",
+	e2ee_unsupported: "Несумісний браузер",
+	e2ee_unsupported_description: "Ваш веб-браузер не підтримує зашифровані дзвінки. Підтримувані браузери включають Chrome, Safari та Firefox 117+.",
+	failed_to_start_livekit: "Не вдалося розпочати з’єднання Livekit",
+	generic: "Щось пішло не так",
+	generic_description: "Надсилання журналів налагодження допоможе нам відстежити проблему.",
+	insufficient_capacity: "Недостатньо обсягу",
+	insufficient_capacity_description: "Сервер досяг максимального обсягу, і ви на разі не можете приєднатися до виклику. Спробуйте пізніше або зверніться до адміністратора сервера, якщо проблема не зникне.",
+	matrix_rtc_transport_missing: "Сервер не налаштовано для роботи з{{brand}}. Зверніться до адміністратора вашого сервера (домен: {{domain}} , Код помилки: {{ errorCode }}).",
+	membership_manager: "Помилка менеджера членства",
+	membership_manager_description: "Менеджер членства був змушений припинити роботу. Це сталося через численні послідовні невдалі мережеві запити.",
+	no_matrix_2_authorization_service: "Служба авторизації для вашого медіасервера (SFU) застаріла.",
+	open_elsewhere: "Відкрито в іншій вкладці",
+	open_elsewhere_description: "{{brand}} було відкрито в іншій вкладці. Якщо це звучить неправильно, спробуйте перезавантажити сторінку.",
+	room_creation_restricted: "Не вдалося створити виклик",
+	room_creation_restricted_description: "Створення викликів може бути обмежено лише для авторизованих користувачів. Спробуйте пізніше або зверніться до адміністратора сервера, якщо проблема не зникне.",
+	unexpected_ec_error: "Сталася несподівана помилка (<0>Код помилки: </0> <1> {{ errorCode }}</1>). Будь ласка, зв'яжіться з адміністратором сервера."
+}, l = {
+	banned_body: "Вас було забанено в цій кімнаті.",
+	banned_heading: "Забанено",
+	call_ended_body: "Вас вилучено з виклику.",
+	call_ended_heading: "Виклик завершено",
+	knock_reject_body: "Ваш запит на приєднання було відхилено.",
+	knock_reject_heading: "Доступ заборонено",
+	reason: "Причина: {{reason}}"
+}, u = {
+	overlay_back_button: "Повернутися до режиму динаміка",
+	overlay_description: "Працює лише під час використання застосунку",
+	overlay_title: "Режим гарнітури"
+}, d = "Завершити виклик", f = "Домівка Element Call", p = "Учасники", m = {
+	link_copied_toast: "Посилання скопійовано до буфера обміну",
+	title: "Запросити до цього виклику"
+}, h = {
+	join_button: "Так, приєднатися до виклику",
+	text: "Цей виклик уже існує, бажаєте приєднатися?",
+	title: "Приєднатися до наявного виклику?"
+}, g = "Сітка", _ = "У центрі уваги", v = {
+	ask_to_join: "Запит на приєднання до виклику",
+	join_as_guest: "Приєднатись як гість",
+	join_button: "Приєднатися до виклику",
+	leave_button: "Повернутися до недавніх",
+	waiting_for_invite: "Запит надіслано! Чекаємо дозволу на приєднання..."
+}, y = "Увійти", b = "Вхід…", x = "<0>Створити обліковий запис</0> або <2>Отримати доступ як гість</2>", S = "Ще не зареєстровані?", C = "Продовжити в Element", w = "Увійти", T = "Мікрофон вимкнено", E = "Мікрофон увімкнено", D = "Вимкнути мікрофон", O = "{{count, number}}", k = "{{count, number}}", A = "{{count, number}}", j = "QR-код", M = "Повторити надсилання журналів", N = {
+	body: "Інший користувач у цьому виклику має проблему. Щоб краще визначити ці проблеми, ми хотіли б зібрати журнал налагодження.",
+	title: "Запит журналу налагодження"
+}, P = "Надіслати журнал налагодження", F = "Надсилання…", I = "Надсилання журналу налагодження…", L = "Дякуємо!", R = "Recaptcha не пройдено", z = "Recaptcha не завантажено", B = "Цей сайт захищений ReCAPTCHA та Google<2>Політикою конфіденційності</2> і <6>Умови обслуговування</6> застосовуються.<9></9> Натискаючи «Зареєструватися», ви погоджуєтеся з нашою<12> Ліцензійна угодою про програмне забезпечення та послуги (SSLA)</12>", V = {
+	passwords_must_match: "Паролі відрізняються",
+	registering: "Реєстрація…"
+}, H = "<0>Уже маєте обліковий запис?</0><1><0>Увійти</0> Or <2>Отримати доступ як гість</2></1>", U = "Підтвердити пароль", W = "Створити свій акаунт", G = "Повернутися на екран домівки", K = "Продовжити", q = "Натиснувши «Приєднатися до виклику зараз», ви погоджуєтеся з нашою <2>Ліцензійною угодою на програмне забезпечення та послуги (SSLA) </2>", J = "Поділитися екраном", Y = {
+	audio_tab: {
+		effect_volume_description: "Змінити гучність реакцій і ефекту підіймання руки.",
+		effect_volume_label: "Гучність звукових ефектів"
+	},
+	background_blur_header: "Фон",
+	background_blur_label: "Розмиття фону відео",
+	blur_not_supported_by_browser: "(Розмиття фону не підтримується цим пристроєм.)",
+	developer_tab_title: "Розробнику",
+	devices: {
+		camera: "Камера",
+		camera_numbered: "Камера {{n}}",
+		change_device_button: "Змінити аудіопристрій",
+		default: "За замовчуванням",
+		default_named: "За замовчуванням <2> ({{name}}) </2>",
+		handset: "Гарнітура",
+		loudspeaker: "Гучномовець",
+		microphone: "Мікрофон",
+		microphone_numbered: "Мікрофон {{n}}",
+		speaker: "Динамік",
+		speaker_numbered: "Динамік {{n}}"
+	},
+	feedback_tab_body: "Якщо у вас виникли проблеми або ви просто хочете залишити відгук, надішліть нам короткий опис нижче.",
+	feedback_tab_description_label: "Ваш відгук",
+	feedback_tab_h4: "Надіслати відгук",
+	feedback_tab_send_logs_label: "Долучити журнали налагодження",
+	feedback_tab_thank_you: "Дякуємо, ми отримали ваш відгук!",
+	feedback_tab_title: "Відгук",
+	opt_in_description: "<0></0><1></1>Ви можете відкликати згоду, прибравши цей прапорець. Якщо ви зараз розмовляєте, це налаштування застосується після завершення виклику.",
+	preferences_tab: {
+		developer_mode_label: "Режим розробника",
+		developer_mode_label_description: "Увімкнути режим розробника та показати вкладку налаштувань розробника.",
+		introduction: "Тут ви можете налаштувати додаткові параметри для кращого досвіду.",
+		reactions_play_sound_description: "Відтворювати звуковий ефект, коли хтось надсилає реакцію у виклик.",
+		reactions_play_sound_label: "Відтворювати звуки реакції",
+		reactions_show_description: "Показувати анімацію, коли хтось надсилає реакцію.",
+		reactions_show_label: "Показувати реакції",
+		show_hand_raised_timer_description: "Показувати таймер, коли учасник піднімає руку",
+		show_hand_raised_timer_label: "Показувати тривалість підняття руки"
+	}
+}, X = "{{count}} зірка", Z = "{{count}} зірки", Q = "{{count}} зірок", $ = "Розпочати новий виклик", ee = "Розпочати відео", te = "Презентація екрана", ne = "Зупинити відео", re = "Надсилання…", ie = "Переключити камеру", ae = "Ще не зареєстровані? <2>Створіть обліковий запис</2>", oe = "Увійдіть до свого облікового запису", se = "Натискаючи \"Перейти\", ви погоджуєтеся з нашою <2>Ліцензійною угодою на програмне забезпечення та послуги (SSLA) </2>", ce = "Увімкнути мікрофон", le = "{{productName}} версія: {{version}}", ue = {
+	always_show: "Показувати завжди",
+	camera_starting: "Завантаження відео...",
+	collapse: "Згорнути",
+	expand: "Розгорнути",
+	mute_for_me: "Вимкнути звук для мене",
+	muted_for_me: "Вимкнено звук для мене",
+	volume: "Гучність",
+	waiting_for_media: "Очікування медіа..."
+}, de = {
+	a11y: e,
+	action: t,
+	analytics_notice: n,
+	call_ended_view: r,
+	call_name: i,
+	common: a,
+	developer_mode: o,
+	disconnected_banner: s,
+	error: c,
+	group_call_loader: l,
+	handset: u,
+	hangup_button_label: d,
+	header_label: f,
+	header_participants_label: p,
+	invite_modal: m,
+	join_existing_call_modal: h,
+	layout_grid_label: g,
+	layout_spotlight_label: _,
+	lobby: v,
+	log_in: y,
+	logging_in: b,
+	login_auth_links: x,
+	login_auth_links_prompt: S,
+	login_subheading: C,
+	login_title: w,
+	microphone_off: T,
+	microphone_on: E,
+	mute_microphone_button_label: D,
+	participant_count_one: O,
+	participant_count_few: k,
+	participant_count_many: A,
+	qr_code: j,
+	rageshake_button_error_caption: M,
+	rageshake_request_modal: N,
+	rageshake_send_logs: P,
+	rageshake_sending: F,
+	rageshake_sending_logs: I,
+	rageshake_sent: L,
+	recaptcha_dismissed: R,
+	recaptcha_not_loaded: z,
+	recaptcha_ssla_caption: B,
+	register: V,
+	register_auth_links: H,
+	register_confirm_password_label: U,
+	register_heading: W,
+	return_home_button: G,
+	room_auth_view_continue_button: K,
+	room_auth_view_ssla_caption: q,
+	screenshare_button_label: J,
+	settings: Y,
+	star_rating_input_label_one: X,
+	star_rating_input_label_few: Z,
+	star_rating_input_label_many: Q,
+	start_new_call: $,
+	start_video_button_label: ee,
+	stop_screenshare_button_label: te,
+	stop_video_button_label: ne,
+	submitting: re,
+	switch_camera: ie,
+	unauthenticated_view_body: ae,
+	unauthenticated_view_login_button: oe,
+	unauthenticated_view_ssla_caption: se,
+	unmute_microphone_button_label: ce,
+	version: le,
+	video_tile: ue
+};
+//#endregion
+
+
+
+
+/***/ }
+
+}]);

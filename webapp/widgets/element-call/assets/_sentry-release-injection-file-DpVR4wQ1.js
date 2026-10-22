@@ -1,0 +1,2 @@
+try{let t=typeof window<`u`?window:e===void 0?typeof globalThis<`u`?globalThis:typeof self<`u`?self:{}:e,n=new t.Error().stack;n&&(t._sentryDebugIds=t._sentryDebugIds||{},t._sentryDebugIds[n]=`a0309c4b-50ad-4ad6-aa9d-3644e9471c9d`,t._sentryDebugIdIdentifier=`sentry-dbid-a0309c4b-50ad-4ad6-aa9d-3644e9471c9d`)}catch{}var e=globalThis||self;{let t=typeof window<`u`?window:e===void 0?typeof globalThis<`u`?globalThis:typeof self<`u`?self:{}:e;t.SENTRY_RELEASE={id:`embedded-v0.28.0`}}export{e as t};
+//# sourceMappingURL=_sentry-release-injection-file-DpVR4wQ1.js.map

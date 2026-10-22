@@ -1,0 +1,338 @@
+"use strict";
+(self["webpackChunkelement_web"] = self["webpackChunkelement_web"] || []).push([[3085],{
+
+/***/ "../../node_modules/.pnpm/@element-hq+element-call-component@https+++codeload.github.com+element-hq+element-call+_1332b967a6678d1d4d7ea56611e7f85c/node_modules/@element-hq/element-call-component/dist/app-_G0Q6BBu.js"
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   a11y: () => (/* binding */ e),
+/* harmony export */   action: () => (/* binding */ t),
+/* harmony export */   analytics_notice: () => (/* binding */ n),
+/* harmony export */   call_ended_view: () => (/* binding */ r),
+/* harmony export */   call_name: () => (/* binding */ i),
+/* harmony export */   common: () => (/* binding */ a),
+/* harmony export */   "default": () => (/* binding */ de),
+/* harmony export */   developer_mode: () => (/* binding */ o),
+/* harmony export */   disconnected_banner: () => (/* binding */ s),
+/* harmony export */   error: () => (/* binding */ c),
+/* harmony export */   group_call_loader: () => (/* binding */ l),
+/* harmony export */   handset: () => (/* binding */ u),
+/* harmony export */   hangup_button_label: () => (/* binding */ d),
+/* harmony export */   header_label: () => (/* binding */ f),
+/* harmony export */   header_participants_label: () => (/* binding */ p),
+/* harmony export */   invite_modal: () => (/* binding */ m),
+/* harmony export */   join_existing_call_modal: () => (/* binding */ h),
+/* harmony export */   layout_grid_label: () => (/* binding */ g),
+/* harmony export */   layout_spotlight_label: () => (/* binding */ _),
+/* harmony export */   lobby: () => (/* binding */ v),
+/* harmony export */   log_in: () => (/* binding */ y),
+/* harmony export */   logging_in: () => (/* binding */ b),
+/* harmony export */   login_auth_links: () => (/* binding */ x),
+/* harmony export */   login_auth_links_prompt: () => (/* binding */ S),
+/* harmony export */   login_subheading: () => (/* binding */ C),
+/* harmony export */   login_title: () => (/* binding */ w),
+/* harmony export */   microphone_off: () => (/* binding */ T),
+/* harmony export */   microphone_on: () => (/* binding */ E),
+/* harmony export */   mute_microphone_button_label: () => (/* binding */ D),
+/* harmony export */   participant_count_few: () => (/* binding */ k),
+/* harmony export */   participant_count_one: () => (/* binding */ O),
+/* harmony export */   participant_count_other: () => (/* binding */ A),
+/* harmony export */   qr_code: () => (/* binding */ j),
+/* harmony export */   rageshake_button_error_caption: () => (/* binding */ M),
+/* harmony export */   rageshake_request_modal: () => (/* binding */ N),
+/* harmony export */   rageshake_send_logs: () => (/* binding */ P),
+/* harmony export */   rageshake_sending: () => (/* binding */ F),
+/* harmony export */   rageshake_sending_logs: () => (/* binding */ I),
+/* harmony export */   rageshake_sent: () => (/* binding */ L),
+/* harmony export */   recaptcha_dismissed: () => (/* binding */ R),
+/* harmony export */   recaptcha_not_loaded: () => (/* binding */ z),
+/* harmony export */   recaptcha_ssla_caption: () => (/* binding */ B),
+/* harmony export */   register: () => (/* binding */ V),
+/* harmony export */   register_auth_links: () => (/* binding */ H),
+/* harmony export */   register_confirm_password_label: () => (/* binding */ U),
+/* harmony export */   register_heading: () => (/* binding */ W),
+/* harmony export */   return_home_button: () => (/* binding */ G),
+/* harmony export */   room_auth_view_continue_button: () => (/* binding */ K),
+/* harmony export */   room_auth_view_ssla_caption: () => (/* binding */ q),
+/* harmony export */   screenshare_button_label: () => (/* binding */ J),
+/* harmony export */   settings: () => (/* binding */ Y),
+/* harmony export */   star_rating_input_label_few: () => (/* binding */ Z),
+/* harmony export */   star_rating_input_label_one: () => (/* binding */ X),
+/* harmony export */   star_rating_input_label_other: () => (/* binding */ Q),
+/* harmony export */   start_new_call: () => (/* binding */ $),
+/* harmony export */   start_video_button_label: () => (/* binding */ ee),
+/* harmony export */   stop_screenshare_button_label: () => (/* binding */ te),
+/* harmony export */   stop_video_button_label: () => (/* binding */ ne),
+/* harmony export */   submitting: () => (/* binding */ re),
+/* harmony export */   switch_camera: () => (/* binding */ ie),
+/* harmony export */   unauthenticated_view_body: () => (/* binding */ ae),
+/* harmony export */   unauthenticated_view_login_button: () => (/* binding */ oe),
+/* harmony export */   unauthenticated_view_ssla_caption: () => (/* binding */ se),
+/* harmony export */   unmute_microphone_button_label: () => (/* binding */ ce),
+/* harmony export */   version: () => (/* binding */ le),
+/* harmony export */   video_tile: () => (/* binding */ ue)
+/* harmony export */ });
+//#region locales/sk/app.json
+var e = { user_menu: "Používateľské menu" }, t = {
+	close: "Zatvoriť",
+	copy_link: "Kopírovať odkaz",
+	edit: "Upraviť",
+	go: "Prejsť",
+	invite: "Pozvať",
+	lower_hand: "Dať dole ruku",
+	no: "Nie",
+	pick_reaction: "Vybrať reakciu",
+	raise_hand: "Zdvihnúť ruku",
+	register: "Registrovať sa",
+	remove: "Odstrániť",
+	show_less: "Zobraziť menej",
+	show_more: "Zobraziť viac",
+	sign_in: "Prihlásiť sa",
+	sign_out: "Odhlásiť sa",
+	submit: "Odoslať",
+	upload_file: "Nahrať súbor"
+}, n = "Účasťou v tejto beta verzii súhlasíte so zhromažďovaním anonymných údajov, ktoré použijeme na zlepšenie produktu. Viac informácií o tom, ktoré údaje sledujeme, nájdete v našich <2>Zásadách ochrany osobných údajov</2> a <6>Zásadách používania súborov cookie</6>.", r = {
+	create_account_button: "Vytvoriť účet",
+	create_account_prompt: "<0>Prečo neskončiť nastavením hesla, aby ste si zachovali svoj účet? </0><1>Budete si môcť ponechať svoje meno a nastaviť obrázok, ktorý sa bude používať pri budúcich hovoroch</1>",
+	feedback_done: "<0> Ďakujeme za vašu spätnú väzbu!</0>",
+	feedback_prompt: "<0> Radi si vypočujeme vašu spätnú väzbu, aby sme mohli zlepšiť vaše skúsenosti.</0>",
+	headline: "{{displayName}}, váš hovor skončil.",
+	not_now_button: "Teraz nie, vrátiť sa na domovskú obrazovku",
+	reconnect_button: "Znovu pripojiť",
+	survey_prompt: "Ako to išlo?"
+}, i = "Názov hovoru", a = {
+	analytics: "Analytika",
+	audio: "Zvuk",
+	avatar: "Obrázok",
+	back: "Späť",
+	display_name: "Zobrazované meno",
+	encrypted: "Šifrované",
+	home: "Domov",
+	loading: "Načítanie…",
+	next: "Ďalej",
+	options: "Možnosti",
+	password: "Heslo",
+	preferences: "Predvoľby",
+	profile: "Profil",
+	reaction: "Reakcia",
+	reactions: "Reakcie",
+	reconnecting: "Opätovné pripájanie...",
+	settings: "Nastavenia",
+	unencrypted: "Nie je zašifrované",
+	username: "Meno používateľa",
+	video: "Video"
+}, o = {
+	always_show_iphone_earpiece: "Zobraziť možnosť slúchadla iPhone na všetkých platformách",
+	crypto_version: "Krypto verzia: {{version}}",
+	custom_livekit_url: {
+		current_url: "Aktuálne nastavené na: ",
+		from_config: "Momentálne nie je nastavené žiadne prepísanie. Používa sa URL adresa zo známeho zdroja alebo konfigurácie.",
+		label: "Vlastná Livekit URL adresa",
+		reset: "Obnoviť prepísanie",
+		save: "Uložiť",
+		saving: "Ukladá sa…"
+	},
+	debug_tile_layout_label: "Ladenie rozloženia dlaždíc",
+	device_id: "ID zariadenia: {{id}}",
+	duplicate_tiles_label: "Počet ďalších kópií dlaždíc na účastníka",
+	environment_variables: "Premenné prostredia",
+	hostname: "Názov hostiteľa: {{hostname}}",
+	livekit_server_info: "Informácie o serveri LiveKit",
+	livekit_sfu: "LiveKit SFU: {{url}}",
+	matrixRTCMode: {
+		Comptibility: {
+			description: "Kompatibilné s domovskými servermi, ktoré nepodporujú sticky udalosti (ale všetci ostatní EC klienti sú v0.17.0 alebo novší)",
+			label: "Kompatibilita: stavové udalosti a multi SFU"
+		},
+		Legacy: {
+			description: "Kompatibilné so staršími verziami EC, ktoré nepodporujú viacero SFU",
+			label: "Staršie: stavové udalosti a najstaršie členstvo SFU"
+		},
+		Matrix_2_0: {
+			description: "Kompatibilné iba s domovskými servermi podporujúcimi prilepené udalosti a všetkými EC klientmi v0.17.0 alebo novšími.",
+			label: "Matrix 2.0: prilepené udalosti a viacero SFU"
+		},
+		title: "Režim MatrixRTC"
+	},
+	matrix_id: "Matrix ID: {{id}}",
+	mute_all_audio: "Stlmiť všetky zvuky (účastníkov, reakcií, zvuky pripojenia)",
+	show_connection_stats: "Zobraziť štatistiky pripojenia",
+	url_params: "Parametre URL adresy"
+}, s = "Spojenie so serverom sa stratilo.", c = {
+	call_is_not_supported: "Hovor nie je podporovaný",
+	call_not_found: "Hovor nebol nájdený",
+	call_not_found_description: "<0>Zdá sa, že tento odkaz nepatrí k žiadnemu existujúcemu hovoru. Skontrolujte, či máte správny odkaz, alebo <2>vytvorte nový</2>.</0>",
+	connection_lost: "Strata spojenia",
+	connection_lost_description: "Boli ste odpojení od hovoru.",
+	e2ee_unsupported: "Nekompatibilný prehliadač",
+	e2ee_unsupported_description: "Váš webový prehliadač nepodporuje šifrované hovory. Medzi podporované prehliadače patria Chrome, Safari a Firefox 117+.",
+	failed_to_start_livekit: "Nepodarilo sa spustiť pripojenie Livekit",
+	generic: "Niečo sa pokazilo",
+	generic_description: "Odoslanie záznamov ladenia nám pomôže nájsť problém.",
+	insufficient_capacity: "Nedostatočná kapacita",
+	insufficient_capacity_description: "Server dosiahol svoju maximálnu kapacitu a momentálne sa nemôžete pripojiť k hovoru. Skúste to znova neskôr alebo kontaktujte správcu servera, ak problém pretrváva.",
+	matrix_rtc_transport_missing: "Server nie je nastavený na prácu s aplikáciou {{brand}}. Kontaktujte prosím správcu svojho servera (Doména: {{domain}}, Kód chyby: {{ errorCode }}).",
+	membership_manager: "Chyba správcu členstva",
+	membership_manager_description: "Správca členstva musel byť vypnutý. Príčinou je mnoho po sebe idúcich neúspešných sieťových požiadaviek.",
+	no_matrix_2_authorization_service: "Autorizačná služba pre váš mediálny server (SFU) je zastaraná.",
+	open_elsewhere: "Otvorené na inej karte",
+	open_elsewhere_description: "Aplikácia {{brand}} bola otvorená na inej karte. Ak sa vám to nezdá, skúste znovu načítať stránku.",
+	room_creation_restricted: "Nepodarilo sa vytvoriť hovor",
+	room_creation_restricted_description: "Uskutočňovanie hovorov môže byť obmedzené iba na autorizovaných používateľov. Skúste to znova neskôr alebo kontaktujte správcu servera, ak problém pretrváva.",
+	unexpected_ec_error: "Vyskytla sa neočakávaná chyba (<0>Kód chyby:</0> <1>{{ errorCode }}</1>). Kontaktujte prosím správcu vášho servera."
+}, l = {
+	banned_body: "Dostali ste zákaz vstupu do miestnosti.",
+	banned_heading: "Zakázané",
+	call_ended_body: "Boli ste odstránení z hovoru.",
+	call_ended_heading: "Hovor bol ukončený",
+	knock_reject_body: "Členovia miestnosti odmietli vašu žiadosť o pripojenie.",
+	knock_reject_heading: "Nie je povolené pripojiť sa",
+	reason: "Dôvod"
+}, u = {
+	overlay_back_button: "Späť do režimu reproduktora",
+	overlay_description: "Funguje iba pri používaní aplikácie",
+	overlay_title: "Režim slúchadla"
+}, d = "Ukončiť hovor", f = "Domov Element Call", p = "Účastníci", m = {
+	link_copied_toast: "Odkaz skopírovaný do schránky",
+	title: "Pozvať na tento hovor"
+}, h = {
+	join_button: "Áno, pripojiť sa k hovoru",
+	text: "Tento hovor už existuje, chceli by ste sa k nemu pripojiť?",
+	title: "Pripojiť sa k existujúcemu hovoru?"
+}, g = "Sieť", _ = "Stredobod", v = {
+	ask_to_join: "Požiadať o pripojenie k hovoru",
+	join_as_guest: "Pripojiť sa ako hosť",
+	join_button: "Pripojiť sa k hovoru",
+	leave_button: "Späť k nedávnym",
+	waiting_for_invite: "Žiadosť odoslaná"
+}, y = "Prihlásiť sa", b = "Prihlasovanie…", x = "<0>Vytvoriť konto</0> Alebo <2>Prihlásiť sa ako hosť</2>", S = "Nie ste ešte zaregistrovaní?", C = "Ak chcete pokračovať na Element", w = "Prihlásiť sa", T = "Mikrofón vypnutý", E = "Mikrofón zapnutý", D = "Stlmiť mikrofón", O = "{{count, number}}", k = "{{count, number}}", A = "{{count, number}}", j = "QR kód", M = "Opakovať odoslanie záznamov", N = {
+	body: "Ďalší používateľ v tomto hovore má problém. Aby sme mohli lepšie diagnostikovať tieto problémy, chceli by sme získať záznam o ladení.",
+	title: "Žiadosť o záznam ladenia"
+}, P = "Odoslať záznamy o ladení", F = "Odosielanie…", I = "Odosielanie záznamov o ladení…", L = "Ďakujeme!", R = "Recaptcha zamietnutá", z = "Recaptcha sa nenačítala", B = "Táto stránka je chránená reCAPTCHA a platia <2>Zásady ochrany osobných údajov</2> a <6>Podmienky služby</6> spoločnosti Google. <9></9>Kliknutím na tlačidlo „Registrovať“ súhlasíte s našou <12>Licenčnou zmluvou o softvéri a službách (SSLA)</12>", V = {
+	passwords_must_match: "Heslá sa musia zhodovať",
+	registering: "Registrácia…"
+}, H = "<0>Už máte konto?</0><1><0>Prihláste sa</0> Alebo <2>Prihlásiť sa ako hosť</2></1>", U = "Potvrdiť heslo", W = "Vytvorte si účet", G = "Návrat na domovskú obrazovku", K = "Pokračovať", q = "Kliknutím na „Pripojiť sa k hovoru teraz“ súhlasíte s našou <2>Licenčnou zmluvou o softvéri a službách (SSLA)</2>", J = "Zdieľať obrazovku", Y = {
+	audio_tab: {
+		effect_volume_description: "Upraviť hlasitosť, pri ktorej sa prehrávajú reakcie a efekty zdvihnutia ruky.",
+		effect_volume_label: "Hlasitosť zvukového efektu"
+	},
+	background_blur_header: "Pozadie",
+	background_blur_label: "Rozmazať pozadie videa",
+	blur_not_supported_by_browser: "(Rozmazanie pozadia nie je podporované týmto zariadením.)",
+	developer_tab_title: "Vývojár",
+	devices: {
+		camera: "Kamera",
+		camera_numbered: "Kamera {{n}}",
+		change_device_button: "Zmeniť zvukové zariadenie",
+		default: "Predvolené",
+		default_named: "Predvolené <2>({{name}})</2>",
+		handset: "Slúchadlo",
+		loudspeaker: "Reproduktor",
+		microphone: "Mikrofón",
+		microphone_numbered: "Mikrofón {{n}}",
+		speaker: "Reproduktor",
+		speaker_numbered: "Reproduktor {{n}}"
+	},
+	feedback_tab_body: "Ak máte problémy alebo jednoducho chcete poskytnúť spätnú väzbu, pošlite nám krátky popis nižšie.",
+	feedback_tab_description_label: "Vaša spätná väzba",
+	feedback_tab_h4: "Odoslať spätnú väzbu",
+	feedback_tab_send_logs_label: "Zahrnúť záznamy o ladení",
+	feedback_tab_thank_you: "Ďakujeme, dostali sme vašu spätnú väzbu!",
+	feedback_tab_title: "Spätná väzba",
+	opt_in_description: "<0></0><1></1>Súhlas môžete odvolať zrušením označenia tohto políčka. Ak práve prebieha hovor, toto nastavenie nadobudne platnosť po skončení hovoru.",
+	preferences_tab: {
+		developer_mode_label: "Režim vývojára",
+		developer_mode_label_description: "Povoliť režim vývojára a zobraziť kartu Nastavenia vývojára.",
+		introduction: "Tu môžete nastaviť ďalšie možnosti pre lepší zážitok.",
+		reactions_play_sound_description: "Prehrať zvukový efekt, keď niekto odošle reakciu na hovor.",
+		reactions_play_sound_label: "Prehrať zvuky reakcie",
+		reactions_show_description: "Zobraziť animáciu, keď niekto odošle reakciu.",
+		reactions_show_label: "Zobraziť reakcie",
+		show_hand_raised_timer_description: "Zobraziť časovač, keď účastník zdvihne ruku",
+		show_hand_raised_timer_label: "Zobraziť trvanie zdvihnutia ruky"
+	}
+}, X = "{{count}} hviezdička", Z = "{{count}} hviezdičky", Q = "{{count}} hviezdičiek", $ = "Spustiť nový hovor", ee = "Spustiť video", te = "Zdieľanie obrazovky", ne = "Zastaviť video", re = "Odosielanie…", ie = "Prepnúť fotoaparát", ae = "Ešte nie ste zaregistrovaný? <2>Vytvorte si účet</2>", oe = "Prihláste sa do svojho konta", se = "Kliknutím na tlačidlo „Prejsť“ súhlasítes našou <2>Licenčnou zmluvou o softvéri a službách (SSLA)</2>", ce = "Zrušiť stlmenie mikrofónu", le = "Verzia {{productName}}: {{version}}", ue = {
+	always_show: "Vždy zobraziť",
+	camera_starting: "Načítavanie videa...",
+	collapse: "Zbaliť",
+	expand: "Rozbaliť",
+	mute_for_me: "Pre mňa stlmiť",
+	muted_for_me: "Pre mňa stlmené",
+	volume: "Hlasitosť",
+	waiting_for_media: "Čaká sa na médiá..."
+}, de = {
+	a11y: e,
+	action: t,
+	analytics_notice: n,
+	call_ended_view: r,
+	call_name: i,
+	common: a,
+	developer_mode: o,
+	disconnected_banner: s,
+	error: c,
+	group_call_loader: l,
+	handset: u,
+	hangup_button_label: d,
+	header_label: f,
+	header_participants_label: p,
+	invite_modal: m,
+	join_existing_call_modal: h,
+	layout_grid_label: g,
+	layout_spotlight_label: _,
+	lobby: v,
+	log_in: y,
+	logging_in: b,
+	login_auth_links: x,
+	login_auth_links_prompt: S,
+	login_subheading: C,
+	login_title: w,
+	microphone_off: T,
+	microphone_on: E,
+	mute_microphone_button_label: D,
+	participant_count_one: O,
+	participant_count_few: k,
+	participant_count_other: A,
+	qr_code: j,
+	rageshake_button_error_caption: M,
+	rageshake_request_modal: N,
+	rageshake_send_logs: P,
+	rageshake_sending: F,
+	rageshake_sending_logs: I,
+	rageshake_sent: L,
+	recaptcha_dismissed: R,
+	recaptcha_not_loaded: z,
+	recaptcha_ssla_caption: B,
+	register: V,
+	register_auth_links: H,
+	register_confirm_password_label: U,
+	register_heading: W,
+	return_home_button: G,
+	room_auth_view_continue_button: K,
+	room_auth_view_ssla_caption: q,
+	screenshare_button_label: J,
+	settings: Y,
+	star_rating_input_label_one: X,
+	star_rating_input_label_few: Z,
+	star_rating_input_label_other: Q,
+	start_new_call: $,
+	start_video_button_label: ee,
+	stop_screenshare_button_label: te,
+	stop_video_button_label: ne,
+	submitting: re,
+	switch_camera: ie,
+	unauthenticated_view_body: ae,
+	unauthenticated_view_login_button: oe,
+	unauthenticated_view_ssla_caption: se,
+	unmute_microphone_button_label: ce,
+	version: le,
+	video_tile: ue
+};
+//#endregion
+
+
+
+
+/***/ }
+
+}]);
