@@ -1,11 +1,11 @@
-import type { Api } from "@element-hq/element-web-module-api";
+import type { Api, Module, ModuleFactory } from "@element-hq/element-web-module-api";
 
-export default class SlashCommandModule {
-    static moduleApiVersion = "^*";
-    constructor(api: Api) {
-        this.api = api;
-    }
-    async load() {
+class SlashCommandModule implements Module {
+    public static readonly moduleApiVersion = "^2.3.0";
+
+    public constructor(private readonly api: Api) {}
+
+    public async load(): Promise<void> {
         this.api.composer.registerSlashCommand({
             command: "shout",
             args: "<message>",
@@ -15,3 +15,5 @@ export default class SlashCommandModule {
         });
     }
 }
+
+export default SlashCommandModule satisfies ModuleFactory;

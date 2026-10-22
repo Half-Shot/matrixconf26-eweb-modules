@@ -1,16 +1,21 @@
 {
   "name": "matrixconf26-eweb-modules",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "Getting started with Element Web module development",
+  "private": true,
+  "type": "module",
   "license": "ISC",
-  "packageManager": "pnpm@10.33.3",
+  "scripts": {
+    "start": "vite",
+    "typecheck": "tsc"
+  },
   "dependencies": {
     "@element-hq/element-web-module-api": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
   }
 }
